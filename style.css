@@ -1,0 +1,132 @@
+/* ============== CSS Reset ============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ============== Main Body Styles ============== */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+}
+
+/* ============== Calculator Styles ============== */
+
+.calculator {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#history {
+  height: 30px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.649);
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+#display {
+  width: 100%;
+  height: 80px;
+  font-size: 36px;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  overflow-x: auto;
+}
+
+/* ============== Button Styles ============== */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  width: 100%;
+  height: 70px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translate(-3px);
+}
+
+button:active {
+  transform: scale(0.98);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============== Button Variants ============== */
+
+.number {
+  background-color: rgba(43, 237, 49, 0.855);
+}
+
+.operator {
+  background-color: rgba(33, 150, 243, 0.6);
+}
+
+.equals {
+  background-color: rgba(255, 153, 0, 0.836);
+}
+
+.clear,
+.delete {
+  background-color: rgba(237, 43, 49, 0.855);
+}
+
+.function {
+  background-color: rgba(156, 39, 176, 0.6);
+}
+
+/* ============== Responsive Styles ============== */
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    border: none;
+    max-width: 95vw;
+    padding: 10px;
+  }
+
+  #display {
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    height: 60px;
+    font-size: 20px;
+  }
+}

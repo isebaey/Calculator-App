@@ -2,6 +2,8 @@
 
 ## Overview
 This is a simple calculator application built using HTML, CSS, and JavaScript. The application supports basic arithmetic operations, including addition, subtraction, multiplication, and division. It features a clean, responsive design and includes keyboard support for ease of use.
+live link: https://isebaey.github.io/Calculator-App/
+![image](https://github.com/user-attachments/assets/4b93d28f-715c-47d4-9757-db519c14ed10)
 
 ## Features
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
@@ -9,9 +11,6 @@ This is a simple calculator application built using HTML, CSS, and JavaScript. T
 - Clear and delete functionality.
 - Responsive design for mobile and desktop views.
 - Error handling for invalid operations and division by zero.
-
-## Screenshots
-![image](https://github.com/user-attachments/assets/4b93d28f-715c-47d4-9757-db519c14ed10)
 
 ## Technologies Used
 - **HTML**: For the structure of the calculator.
